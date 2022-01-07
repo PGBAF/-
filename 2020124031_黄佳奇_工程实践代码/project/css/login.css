@@ -1,0 +1,197 @@
+/* 通用css */
+*{
+	margin:0;
+	
+	padding:0;
+}
+
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	
+	background:lightseagreen;
+}
+
+html,body{
+	height: 100%;
+}
+
+div.wrap{
+	width:100%;
+	height:100%;
+	background: -webkit-linear-gradient(left,#3395F9,%59C0EB);
+	position: relative;
+	margin:auto;
+}
+
+div.wrap>.content{
+	width:1000px;
+	height:500px;
+	background: #FFFFFF;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin-left: -500px;
+	margin-top: -250px;
+	
+	border-radius: 20px;
+}
+
+div.wrap>.content>.left{
+	height:100%;
+	width:65%;
+	background: lightblue;
+	float: left;
+	position:relative;
+	border-radius: 20pt 250pt 250pt 20pt;
+}
+
+div.wrap>.content>.left>.logo
+{
+	width:100%;
+	height:100px;
+	/*background-color: #0000FF;*/
+	position:absolute;
+	float:left;
+	top:0px;
+	left:0px;
+}
+div.wrap>.content>.left>.logo>img
+{
+	width: 80px;
+	height: 80px;
+	float: left;
+	left:5%;
+	top:25%;
+	position: relative;
+	
+}
+
+div.wrap>.content>.left>.logo>h3{
+	line-height: 75px;
+	font-size: 25px;
+	color: blue;
+	 background: linear-gradient(to top,blue,lightblue);
+	-webkit-background-clip: text;
+	color: transparent;
+	top:25%;
+	left:5%;
+	position:relative;
+}
+
+div.wrap>.content>.left>img
+{
+	width: 90%;
+	height: 80%;
+	top: 100px;
+	bottom: 0px;
+	position: relative;
+	float: left;
+	
+}
+
+
+div.wrap>.content>.right{
+	height:100%;
+	width:35%;
+	float: right;
+}
+
+div.wrap>.content>.right>h5
+{
+	color:gray;
+	position: relative;
+	top:10%;
+	right:-13%;
+}
+div.wrap>.content>.right>.title
+{
+	
+	color: gray;
+	 background: linear-gradient(to top,gray,lightgray);
+	-webkit-background-clip: text;
+	color: transparent;
+	position:relative;
+	top:20%;
+	right:-10%;
+	
+}
+div.wrap>.content>.right>form
+{
+	width:350px;
+	position: relative;
+	float:right;
+	top:30%;
+	right:0px;
+	text-align: center;
+	
+
+}
+
+
+
+div.wrap>.content>.right>form>input
+{
+	width:86%;
+	height: 40px;
+	margin-top: 10px;
+	line-height: 30px;
+	border-radius: 30px;
+	border:1px solid lightgray;
+	position: relative;
+	float: left;
+	margin-left: 25px;
+	
+}
+
+.image{
+	/* background: red; */
+	width:100%;
+	height:70px;
+	margin-top: 20px;
+	position: relative;
+	
+}
+.image>img
+{
+	position: absolute;
+	float:left;
+	/* right:25px; */
+	top:0;
+	left:0;
+	width:100%;
+}
+
+.image>input{
+	position: absolute;
+	background: transparent;
+	border:0;
+	margin-top: 25px;
+	top:0;
+	left:0;
+	margin-left:150px;
+	font-size: 19px;
+	color:whitesmoke;
+}
+/*div.wrap>.content>.right>form>button>input
+{
+
+	
+	background: url(../img/Login-page_Login-box.png);
+	width:250px;
+	height:50px;
+	backgroud-position: relative;
+	background-size: cover;
+	
+
+}
+div.wrap>.content>.right>form>button
+{
+	background-image: url(../img/Login-page_User-box.png);
+	background-size: cover;
+}*/

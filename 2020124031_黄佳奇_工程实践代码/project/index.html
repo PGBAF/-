@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>智慧农业</title>
+
+<link rel="stylesheet" type="text/css" href="style/global.css">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="js/echarts.js"></script>
+
+</head>
+<body>
+<!-- S-head部分 -->
+<div class="head">
+	<div class="logo">
+		<img src="img/Login-page_logo.png" alt="">
+		<span>智慧农业</span>
+	</div>
+	<div class="search">
+		<div class="ipt">
+			<img src="首页界面切图/Home-page_Search-icon.png" />
+			<input type="text" placeholder="输入关键字" >
+			
+		</div>
+		
+		<div class="home">
+			<img src="img/管理员头像.png" alt="">
+			<span>管理员</span>
+			<img class="right" src="首页界面切图/Home-page_remind.png" alt="">
+			<img class="right" src="首页界面切图/Home-page_Log-out.png" alt="">
+		</div>
+	</div>
+</div>
+<!-- E-head部分 -->
+
+<!-- S-左侧导航部分 -->
+<!-- E-左侧导航部分 -->
+
+<div class="nave">
+	<ul>
+		<li  class="current">
+			<img class="top" src="首页界面切图/Home-page_home-icon.png" alt="">
+			<span>首页</span>
+		</li>
+		<li>
+			<img src="首页界面切图/Home-page_temperature-icon.png" alt="">
+			<span>温度监测</span>
+		</li>
+		<li>
+			<img src="首页界面切图/Home-page_Humidity-icon.png" alt="">
+			<span>湿度监测</span>
+		</li>
+		<li>
+			<img src="首页界面切图/Home-page_Light-icon.png" alt="">
+			<span>光强监测</span>
+		</li>
+		
+		<img src="首页界面切图/Home-page_Wire-network.png" alt="">
+		
+
+	</ul>
+</div>
+<!-- S-主要部分 -->
+<div class="main_box">
+	<div class="page1 active">
+
+		<img class="banner" src="首页界面切图/Home-banner.png" >
+		
+		<div class="data">
+			<h1>数据中心</h1>
+			<ul>
+				<li>
+					<img src="首页界面切图/Home-page_temperature-monitoring.png" alt="">
+					<div class="content"><span>13.5℃</span>温度监测</div>
+					<div class="progress">
+						<div class="a"></div>
+						<span>70%</span>
+					</div>
+					</li>
+				<li>
+					<img src="首页界面切图/Home-page_Humidity-monitoring.png" alt="">
+					<div class="content"><span>42%</span>湿度监测</div>
+					<div class="progress">
+						<div class="b"></div>
+						<span>80%</span>
+					</div>
+					</li>
+				<li>
+					<img src="首页界面切图/Home-page_Light-intensity-monitoring.png" alt="">
+					<div class="content"><span>80lux</span>光强监测</div>
+					<div class="progress">
+						<div class="c"></div>
+						<span>85%</span>
+					</div>
+					</li>
+			</ul>
+			
+			
+		</div>
+	</div>
+	<div class="page2">
+		<div class="box">
+			<div class="data1">
+				<h1>实时温度监测</h1>
+				<ul>
+					<li>
+						<img src="温度界面切图/Temperature-page_Temperature.png" alt="">
+						<div class="content"><span>13.5℃</span>温度监测</div>
+						<div class="progress">
+						<div class="a"></div>
+						<span>70%</span>
+					</div>
+					</li>
+				<li>
+					<img src="温度界面切图/Temperature-page_carbon-dioxide.png" alt="">
+					<div class="cir">co<span>2</span></div>
+					<span>二氧化碳<br>178mg</span>
+					</li>
+				<li>
+					<img src="温度界面切图/Temperature-page_wind-speed.png" alt="">
+					<div class="cir"><img src="温度界面切图/Temperature-page_wind-icon.png" alt=""></div>
+					<span>风速<br>26km/h</span>
+					</li>
+				</ul>
+			
+			</div>
+			<div class="bottom">
+				<div class="left">
+					<div class="wchange" style="width:95%;height:180px;"></div>
+					<script src="js/tu.js"></script>
+					<div class="nodes" style="width:95%;height:180px;"></div>
+					<script src="js/node.js"></script>
+				</div>
+				<div class="right">
+					<h1>温度占比数据统计</h1>
+										<div>
+											<div class="pw">85%</div>
+											<p>平均温度<span>17.6℃</span></p>
+										</div>
+										<div>
+											<div class="min">55%</div>
+											<p>最低温度<span>4.8℃</span></p>
+										</div>
+										<div>
+											<div class="max">85%</div>
+											<p>最高温度<span>37.8℃</span></p>
+										</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</div>
+	<div class="page3">
+		<div class="box">
+			<div class="data1">
+				<h1>实时湿度数据监测</h1>
+				<ul>
+					<li>
+						<img src="湿度界面切图/Humidity-page_Humidit-black.png" alt="">
+						<div class="content"><span>42%</span>温度监测</div>
+						<div class="progress">
+						<div class="a"></div>
+						<span>70%</span>
+					</div>
+					</li>
+				<li>
+					<img src="湿度界面切图/Humidity-page_air-humidity.png" alt="">
+					<div class="cir"><img src="湿度界面切图/Humidity-page_air-humidity-icon.png" alt=""></div>
+					<span>空气湿度<br>65%</span>
+					</li>
+				<li>
+					<img src="湿度界面切图/Humidity-page_soil-moisture.png" alt="">
+					<div class="cir"><img src="湿度界面切图/Humidity-page_soil-moisture-icon-.png" alt=""></div>
+					<span>土壤湿度<br>18.5%</span>
+					</li>
+				</ul>
+			
+			</div>
+			<div class="bottom">
+				<div class="left">
+					<div class="echange" style="width:95%;height:180px;"></div>
+					<script src="js/tu1.js"></script>
+					<div class="enode" style="width:95%;height:180px;"></div>
+					<script src="js/tu2.js"></script>
+				</div>
+				<div class="right">
+					<h1>湿度占比数据统计</h1>
+										<div>
+											<div class="pw">85%</div>
+											<p>平均湿度<span>21%</span></p>
+										</div>
+										<div>
+											<div class="min">55%</div>
+											<p>最低湿度<span>13%</span></p>
+										</div>
+										<div>
+											<div class="max">85%</div>
+											<p>最高湿度<span>58%</span></p>
+										</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="page4">
+		<div class="box">
+						<div class="data1">
+							<h1>实时光强数据监测</h1>
+							<ul>
+								<li>
+									<img src="光强界面切图/Light-intensity-page_Light-intensity-black.png" alt="">
+									<div class="content"><span>80lux</span>光强监测</div>
+									<div class="progress">
+										<div class="b"></div>
+										<span>80%</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="bot">
+							<div class="b-left">
+								<ul>
+									<li>
+										<p>光强监测</p>
+										<h1><span>6</span>/10<small>正常</small></h1>
+										<img src="光强界面切图/Light-intensity_normal-black.png" >
+										<div><span>高</span></div>
+									</li>
+								    <li>
+										<p>光强平均值</p>
+										<h1><span style ="color:greenyellow;">8</span>/10<small style="background:lightgreen;"">舒适</small></h1>
+										<img src="光强界面切图/Light-intensity_comfortable-black.png" >
+										<div>低<span>高</span></div>
+									</li>
+								</ul>
+								<div>
+									<div>
+										技术
+										<p>
+											7/10
+											<img src="光强界面切图/Light-intensity_technology.png">
+										</p>
+									</div>
+									<div>
+										无障碍
+										<p>
+											5/10
+											<img src="光强界面切图/Light-intensity_Accessibility.png">
+										</p>
+									</div>
+									<div>
+										安全
+										<p>
+											9/10
+											<img src="光强界面切图/Light-intensity_security.png">
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="b-right" >
+								<div class="schange" style="width:100%; height:350px;" ></div>
+								<script src="js/tu3.js"></script>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+	</div>
+
+</div>
+<!-- E-主要部分 -->
+
+</body>
+</html>
