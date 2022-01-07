@@ -1,0 +1,86 @@
+mysql -uadmin -p 进入mysql
+
+show databases;显示所有数据库
+
+select database(); 判断在哪个数据库里
+
+select user();查看当前用户
+
+use 库名;进入其中一个数据库
+
+show tables (from 'db_name');显示所有库中表名
+
+create database(schema) if not exists 'db_name' 创建数据库
+
+drop database (schema)if exists 'db_name' 删除数据库
+
+create table if not exists table_name(
+'列名' 字段类型
+）；
+创建表
+
+desc 'table_name'; 查看表的创建信息
+
+drop table 'table_name'; 删除表
+
+alter table tb_name add (
+'列名' 字段类型
+）；
+添加字段
+
+alter table 'table_name' modify  '列名' 字段类型；
+修改字段类型
+
+alter table 'table_name' change '列名' '列名1' 字段类型；
+修改列名和字段类型
+
+alter table 'tb1' rename 'tb2';
+修改表名
+
+alter table 'tb' drop '列名1'，drop'列名2'...；
+删除字段
+
+insert into tb_name('列名') values(),(),()...;
+添加数据
+
+select * from 'tb_name';
+查看数据
+
+update tb_name set age=1 where id=1;
+更新数据
+
+delect from tb_name where id=1;
+删除数据
+
+alter table tb_name add unique 'field' ('new_field');
+添加唯一约束
+
+alter table tb_name drop key|index 'field';
+删除唯一约束
+
+alter table tb_name add primary key 'field' ('new_field');
+添加主键约束
+
+alter table tb_name  drop primary key;
+删除主键约束
+
+alter table tb_name change 'id' 'id' int null auto_increment;
+添加自增约束
+
+alter table tb_name change 'id' 'id' int not null;
+删除自增约束
+
+alter table tb_name alter field_name set default literal|(drop default);
+默认约束
+
+begin 开始事务
+commit 结束事务
+rollback 回滚
+
+create view view_name as select ...;
+创建视图
+
+drop view view_name;
+删除视图
+ 
+

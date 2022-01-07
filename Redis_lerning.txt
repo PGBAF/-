@@ -1,0 +1,180 @@
+redis-server 启动redis
+
+redis-cli    本地进入redis
+
+redis-cli -h 127.0.0.1 -p 3679  外地服务器进入redis
+
+redis-cli shutdown 强行停止Redis服务
+
+quit/exit 退出redis 交互模式
+
+
+
+
+select index(0-15) 选择使用0-15数据库
+
+set key value 设置一个键值对
+
+mset key1 value1 key2 value2 设置多个键值对
+
+keys * 获取所有键
+
+？匹配一个字符
+* 匹配 0 或 任意 字符
+[] 匹配 括号间的规定字符
+\x 取消字符转义
+
+get key 获取一个键对应的值
+
+mget key1 key2 获取多个键对应的值
+
+exists key 判断键是否存在 
+1 存在
+0不存在
+
+rename key new_key  重命名
+
+expire key seconds 设置键过期时间
+
+ttl key 查看键剩余时间
+
+persist key 设置永久键
+
+set key value ex seconds 设置键值对和过期时间
+
+type key 获取键值数据类型
+
+del key 删除一个或多个键返回删除键的个数
+
+redis-cli keys "xxx*" | xargs redis-cli del
+或
+redis-cli del redis-cli keys "xxx*"
+删除符合规则的键
+
+flushall 删除所有数据
+
+
+
+字符串类型string
+append key value 添加字符
+
+incr key 加1
+
+incrby key number 加整数
+
+decr key 减1
+
+decrby key number 减整数
+
+
+
+
+列表list
+lpush key value1 value2 value3...左边添加
+
+rpush key value1 value2 value3...右边添加
+
+lpop key 左边删除一个
+
+rpop key 右边删除一个
+
+lrem key count value 
+count>0 删除左边前count个value
+count<0 删除右边前|count|个value
+count=0删除所有value
+
+llen key 获取列表长度
+
+lindex key index 查看指定位置元素
+
+lrange key start end 获取列表片段
+-1 最后一个
+0 第一个
+
+
+
+哈希类型hash
+hset key field value 设置一个
+
+hmset key field1 value1 field2 value2...设置多个
+
+hget key field 获取一个
+
+hmget key field1 field2...获取多个
+
+hkeys key 获取所有field
+
+hvals key 获取所有value
+
+hgetall key 获取所有field和value
+
+hlen key 获取field个数
+
+hexists key field 判断字段是否存在
+
+hsetnx key field value 不存在则添加
+
+hincrby key field increment(+加 / -减) 增加数字
+
+hdel key  field1 field2... 删除一个或多个
+
+
+
+
+集合set
+sadd key member1 member2 member3...增加一个或多个
+
+srem key member1 member2...删除一个或多个
+
+spop key count 随机删除count个
+
+sismember key member 判断是否存在
+
+smembers key 获取所有
+
+scard key 获取个数
+
+srandmember key count 随机获取count个
+
+sinter key1 key2 ... 交集
+
+sinterstore destination key1 key2...保存交集
+
+sunion key1 key2... 并集
+
+sunionstore destination key1 key2...保存并集
+
+sdiff key1 key2 差集
+
+sdiffstore destination key1 key2...保存差集
+
+
+
+
+有序集合zset
+zadd key score member 增加
+
+zcard key 查看个数
+
+zscore key member 获取分数
+
+zrange key start end [withscore] 从小到大打印
+
+zrem key member 移除
+
+zrangebyscore key min max [withscore] [limit count] 按分数范围获取
+
+zcount key min max 获取范围内个数
+
+zincrby key increment member 增加分数
+
+zremrangebyrank key start end 按排名删除
+
+zremrangebyscore key min max 按分数删除
+
+zinterstore detination numkeys key [key...] [weights weight[weight...]] [aggregate sum|min|max]
+计算交集
+
+ 
+
+ 

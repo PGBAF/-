@@ -1,0 +1,44 @@
+mongo 进入MongoDB
+
+show dbs 显示所有库
+
+show collections 显示所有集合
+
+db.createCollection('stu') 创建集合         
+
+db.dropDatabase() 删除库
+
+db.集合名字.drop() 删除集合
+
+
+db.stu.insert({'name':'hjq','age':18})传入单条
+
+db.stu.insert({},{},{})传入多条
+
+db.stu.find().pretty()查看
+
+db.stu.find({$or:[{'age':18},{'name':'moran'}]}).pretty() or条件查看
+
+
+db.stu.update({},{})全局属性修改
+
+db.stu.update({},{$set:{}})指定属性修改
+
+db.stu.update({},{$set:{}},{multi:true})多条相同数据修改
+
+db.stu.updateOne()
+
+db.stu.updateMany()
+
+
+db.stu.remove({})删除
+
+db.stu.remove({},{justOne:true})删除一条
+
+db.stu.deleteOne({})
+
+db.stu.deleteMany({})
+
+db.repairDatabase()更新
+
+
